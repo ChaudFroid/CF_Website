@@ -823,7 +823,7 @@
   }
   body.dark-mode #cs-navigation .cs-logo {
     /* makes it turn white */
-    /* filter: grayscale(1) brightness(1000%); */
+    filter: grayscale(1) brightness(1000%);
   }
   body.dark-mode #cs-navigation .cs-li-link {
     color: var(--bodyTextColorWhite);
