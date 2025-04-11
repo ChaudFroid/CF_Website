@@ -2,86 +2,66 @@
 /*-- -------------------------- -->
 <---          Gallery           -->
 <--- -------------------------- -*/
-/* Mobile - 360px - Contains hover animation */
+/* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #gallery {
-    position: relative;
-    /* Prevents overflow from the image going off screen */
-    overflow: hidden;
+  #gallery-1446 {
     padding: var(--sectionPadding);
-    /* Centers button */
-    text-align: center;
   }
-  #gallery .cs-container {
+  #gallery-1446 .cs-container {
+    width: 100%;
+    max-width: 80rem;
     margin: auto;
-    max-width: 82.625em;
-    width: 100%;
-  }
-  #gallery .cs-image-group {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0 auto 3.75rem;
-    max-width: 82.625em;
-    width: 100%;
-    padding: 0;
-    /* used rem so it doesn't scale with the font size of on parent */
-    font-size: min(1.1vw, 1em);
-    gap: 1.875em;
-  }
-  #gallery .cs-row {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    gap: 1.875em;
-  }
-  #gallery .cs-picture {
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
     position: relative;
-    display: block;
   }
-  #gallery .cs-picture img {
+  #gallery-1446 .cs-content {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.5rem;
+  }
+  #gallery-1446 .cs-title {
+    margin: 0;
+  }
+  #gallery-1446 .cs-gallery {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19.0625rem, 1fr));
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+    position: relative;
+  }
+  #gallery-1446 .cs-image {
+    /* 260px - 360px */
+    min-height: clamp(16.25rem, 60vw, 20rem);
+    border-radius: 1rem;
+    /* clips the image corners */
+    overflow: hidden;
+    display: block;
+    position: relative;
+  }
+  #gallery-1446 .cs-image img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    /* makes it act like a background image */
     object-fit: cover;
   }
-  #gallery .cs-row-1 .cs-picture1 {
-    height: 35.4375em;
-    width: 26.25em;
-  }
-  #gallery .cs-row-1 .cs-picture2 {
-    height: 39.3125em;
-    width: 26.25em;
-  }
-  #gallery .cs-row-1 .cs-picture3 {
-    height: 32em;
-    width: 26.25em;
-  }
-  #gallery .cs-row-2 .cs-picture1 {
-    height: 30.75em;
-    width: 26.25em;
-  }
-  #gallery .cs-row-2 .cs-picture2 {
-    height: 32.3125em;
-    width: 26.25em;
-  }
-  #gallery .cs-row-2 .cs-picture3 {
-    height: 39.3125em;
-    width: 26.25em;
-  }
-  #gallery .cs-row-3 .cs-picture1 {
-    height: 39.0625em;
-    width: 26.25em;
-  }
-  #gallery .cs-row-3 .cs-picture2 {
-    height: 28.25em;
-    width: 26.25em;
-  }
-  #gallery .cs-row-3 .cs-picture3 {
-    height: 39.3125em;
-    width: 26.25em;
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #gallery-1446 .cs-title {
+    color: var(--bodyTextColorWhite);
   }
 }
