@@ -22,6 +22,10 @@
   body.dark-mode h6 {
     color: #fff;
   }
+  body.dark-mode .cs-white-text,
+  body.dark-mode .underscore-color {
+    color: #fff !important;
+  }
   body.dark-mode .light {
     display: none;
   }

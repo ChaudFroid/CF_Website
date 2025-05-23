@@ -16,6 +16,7 @@
   #cs-contact {
     padding: var(--sectionPadding);
     font-family: "Roboto", "Arial", sans-serif;
+    margin-top: 3rem;
   }
   #cs-contact .cs-container {
     margin: auto;

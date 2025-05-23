@@ -4,7 +4,7 @@ description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'about/'
 eleventyNavigation:
-    key: About Us
+    key: À propos
     order: 200
 ---
 
@@ -19,21 +19,21 @@ eleventyNavigation:
     <!--                    LANDING                   -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
+    <!-- <section id="int-hero">
+        <h1 id="home-h">À propos</h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+            <source media="(max-width: 600px)" srcset="/assets/images/background-abstract-texture.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/background-abstract-texture.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/background-abstract-texture.jpg" alt="Background Image" loading="eager" width="2500" height="1667">
         </picture>
 
-    </section>
+    </section> -->
 
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    <section id="sbs" >
         <div class="cs-container">
             <!-- Left Image Section -->
             <div class="cs-left">
@@ -50,26 +50,39 @@ eleventyNavigation:
             </div>
             <!-- Right Content Section-->
             <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+                <span class="cs-topper">L’Artisan du Confort Luxembourgeois – Depuis 1993</span>
+                <h2 class="cs-title">Notre Héritage</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                   Depuis sa création en 1993, notre entreprise a suivi une trajectoire marquée par l'évolution constante et l'adaptation aux besoins du marché luxembourgeois. Ce qui a commencé comme une modeste activité spécialisée dans le chauffage et les installations sanitaires s'est progressivement développé, toujours guidé par notre engagement envers la qualité et la satisfaction client.
                     </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
+                <p class="cs-text">Les premières décennies ont été consacrées à la maîtrise de notre cœur de métier : les systèmes de chauffage et la plomberie. Nous avons soigneusement sélectionné nos partenaires techniques, travaillant exclusivement avec des marques réputées comme Viessmann, Buderus et De Dietrich pour garantir la fiabilité de nos installations.</p>
+                <p class="cs-text">C'est en 2010 que nous avons fait notre entrée dans le domaine de la climatisation, répondant à une demande croissante en matière de confort estival. Cette expansion s'est accompagnée de nouveaux partenariats avec des leaders comme Daikin et LG, tout en maintenant notre exigence de qualité.</p>
+                <p class="cs-text">L'année 2024 marque un nouveau chapitre de notre histoire avec le lancement de notre activité d'installation de panneaux solaires. Cette diversification naturelle répond à la fois aux attentes de nos clients et aux enjeux énergétiques actuels. Nous abordons cette nouvelle technologie avec la même rigueur que nous appliquons à tous nos projets, en nous entourant des meilleurs équipementiers et en formant spécifiquement nos équipes.</p>
+                <p class="cs-text">Aujourd'hui présent sur tout le territoire luxembourgeois, nous restons fidèles à notre approche artisanale : un suivi personnalisé pour chaque client, des solutions sur mesure et un service après-vente réactif. Notre force réside dans cette combinaison d'expérience accumulée et de capacité à intégrer progressivement les innovations pertinentes.</p>
+
+                <p class="cs-text">L'avenir ? Continuer à servir nos clients avec le même sérieux qui nous anime depuis plus de trente ans, tout en restant à l'écoute des évolutions technologiques et des besoins changeants du marché. Sans prétention, mais avec la détermination qui a toujours guidé notre entreprise : faire bien, durablement, pour ceux qui nous font confiance.</p>
+
             </div>
         </div>
     </section>
+
+    <!-- ============================================ -->
+<!--                    Map                       -->
+<!-- ============================================ -->
+    
+    <section id="map-720" style="flex-direction: column; ">
+    <h2 class="map-title" >Nous sommes ici </h2>
+    <p class="cs-text map-text " >Visitez-nous ou contactez-nous pour un rendez-vous </p>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/map-chaud-froid.png">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/map-chaud-froid.png">
+            <img loading="lazy" decoding="async" src="/assets/images/map-chaud-froid.png" alt="map" width="1280" height="600">
+        </picture>
+    </section>  
+
+                      
 
     {% include 'components/cta.html' %}
 
